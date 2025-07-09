@@ -1,8 +1,13 @@
-# react-responsive-modal
+# react-responsive-modal (@lib-tj)
 
-[![npm version](https://img.shields.io/npm/v/react-responsive-modal.svg)](https://www.npmjs.com/package/react-responsive-modal)
-[![npm downloads per month](https://img.shields.io/npm/dm/react-responsive-modal.svg)](https://www.npmjs.com/package/react-responsive-modal)
-[![codecov](https://img.shields.io/codecov/c/github/pradel/react-responsive-modal/master.svg)](https://codecov.io/gh/pradel/react-responsive-modal)
+[![npm version](https://img.shields.io/npm/v/@lib-tj/react-responsive-modal.svg)](https://www.npmjs.com/package/@lib-tj/react-responsive-modal)
+[![npm downloads per month](https://img.shields.io/npm/dm/@lib-tj/react-responsive-modal.svg)](https://www.npmjs.com/package/@lib-tj/react-responsive-modal)
+
+# Warning 
+
+This is a fork of MIT © [Léo Pradel](https://www.leopradel.com/) React Responsive Modal, heavliy modified to run with react v19. This is not my work !.
+
+# About
 
 A simple responsive and accessible react modal.
 
@@ -63,5 +68,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 Check the documentation: https://react-responsive-modal.leopradel.com/#props.
 
 ## License
+
+Please support the origional author !
 
 MIT © [Léo Pradel](https://www.leopradel.com/)

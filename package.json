@@ -1,6 +1,6 @@
 {
-  "name": "react-responsive-modal",
-  "version": "6.4.1",
+  "name": "@lib-tj/react-responsive-modal",
+  "version": "7.0.2",
   "description": "A simple responsive and accessible react modal",
   "license": "MIT",
   "main": "dist/index.js",
@@ -38,10 +38,10 @@
     "mobile",
     "flex"
   ],
-  "repository": "git+https://github.com/pradel/react-responsive-modal.git",
+  "repository": "git+https://github.com/tejas-janardhan/react-responsive-modal.git",
   "author": "Léo Pradel/Tejas (Upgrade to Reactv19)",
   "bugs": {
-    "url": "https://github.com/pradel/react-responsive-modal/issues"
+    "url": "https://github.com/tejas-janardhan/react-responsive-modal/issues"
   },
   "homepage": "https://react-responsive-modal.leopradel.com/",
   "funding": "https://github.com/sponsors/pradel",
