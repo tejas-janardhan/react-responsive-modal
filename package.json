@@ -12,7 +12,8 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "size": "size-limit"
+    "size": "size-limit",
+    "e2e:chrome": "cypress run --browser chrome"
   },
   "files": [
     "dist",

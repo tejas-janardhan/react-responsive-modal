@@ -2,7 +2,7 @@
 
 describe('simple modal', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000');
+    cy.visit('https://react-responsive-modal.leopradel.com');
     // Page is heavy to load so we wait for it to be loaded
     cy.wait(500);
   });
