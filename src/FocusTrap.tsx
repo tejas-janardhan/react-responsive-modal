@@ -1,18 +1,18 @@
-import { useEffect, useRef } from 'react';
-import { isBrowser } from './utils';
+import { useEffect, useRef } from "react";
+import { isBrowser } from "./utils";
 import {
   tabTrappingKey,
   candidateSelectors,
   getAllTabbingElements,
-} from './lib/focusTrapJs';
+} from "./lib/focusTrapJs";
 
 interface FocusTrapProps {
-  container?: React.RefObject<HTMLElement> | null;
+  container?: React.RefObject<HTMLElement | null>;
   initialFocusRef?: React.RefObject<HTMLElement>;
 }
 
 export const FocusTrap = ({ container, initialFocusRef }: FocusTrapProps) => {
-  const refLastFocus = useRef<HTMLElement | null>();
+  const refLastFocus = useRef<HTMLElement | null>(null);
   /**
    * Handle focus lock on the modal
    */
@@ -24,7 +24,7 @@ export const FocusTrap = ({ container, initialFocusRef }: FocusTrapProps) => {
     };
 
     if (isBrowser) {
-      document.addEventListener('keydown', handleKeyEvent);
+      document.addEventListener("keydown", handleKeyEvent);
     }
     // On mount we focus on the first focusable element in the modal if there is one
     if (isBrowser && container?.current) {
@@ -56,7 +56,7 @@ export const FocusTrap = ({ container, initialFocusRef }: FocusTrapProps) => {
     }
     return () => {
       if (isBrowser) {
-        document.removeEventListener('keydown', handleKeyEvent);
+        document.removeEventListener("keydown", handleKeyEvent);
         // On unmount we restore the focus to the last focused element
         refLastFocus.current?.focus();
       }
