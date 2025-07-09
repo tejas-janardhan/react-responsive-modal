@@ -158,7 +158,7 @@ export interface ModalProps {
    */
   onAnimationEnd?: () => void;
   children?: React.ReactNode;
-  ref: React.RefObject<HTMLDivElement | null>;
+  ref?: React.RefObject<HTMLDivElement | null>;
 }
 
 export const Modal = ({
@@ -206,7 +206,7 @@ export const Modal = ({
   useModalManager(refModal, open);
 
   // Hook used to manage the scroll
-  useScrollLock(ref, open, showPortal, blockScroll, reserveScrollBarGap);
+  useScrollLock(refModal, open, showPortal, blockScroll, reserveScrollBarGap);
 
   const handleOpen = () => {
     if (
